@@ -6,29 +6,31 @@ body {
 .container {
   padding: 25px 50px;
   background-color: #ffffff;
-  margin: 100px 600px;
+  max-width: 600px;
+  margin: 100px auto;
   border-radius: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 80px;
   text-align: center;
   color: #272343;
+  padding: 0;
+  line-height: 48px;
 }
 
 .search-form {
   border-radius: 30px;
   padding: 8px;
-  border: 1px solid #272343;
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
 }
 
 .search-form:hover {
   border-radius: 30px;
   padding: 8px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
-  transition: all;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  transition: all 200ms ease;
 }
 
 .search,
@@ -42,4 +44,65 @@ h1 {
 .search {
   width: 90%;
   outline: none;
+}
+
+.current-data {
+  text-align: center;
+}
+
+.current-city {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 2px;
+  color: #272343;
+}
+
+.current-weather-details {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+}
+
+.current-temperature {
+  display: flex;
+  justify-content: space-around;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.emoji {
+  font-size: 74px;
+  position: relative;
+  top: 5px;
+}
+
+.current-temperature .temp {
+  font-size: 80px;
+  margin-left: 10px;
+}
+
+.current-temperature .unit {
+  font-size: 24px;
+  position: relative;
+  top: 20px;
+}
+
+.material-symbols-outlined {
+  color: #272343;
+  position: relative;
+  top: 5px;
+}
+
+.line {
+  border-bottom: 1px solid #bae8e8;
+  padding: 0 0 30px 0;
+}
+a {
+  color: #bae8e8;
+}
+
+footer p {
+  padding: 10px 0 0 0;
+  font-size: 13px;
+  text-align: center;
 }
