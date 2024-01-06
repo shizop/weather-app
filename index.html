@@ -9,13 +9,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
   <body>
     <div class="container">
       <h1>Weather</h1>
-      <div class="search-form">
-        <form>
-          <input type="submit" value="🔍" class="submit"/>
+      <div >
+        <form class="search-form" id="search-form">
+          <input type="submit" value="🔍" class="submit" id="submit"/>
           <input type="search" placeholder="Enter city name.." id="search" class="search"/>
           
         </form>
@@ -23,12 +24,12 @@
       <div class="current-data">
         <div class="current-place">
           <p class="today-date">12:37, Satuday, 6 January 2024</p>
-          <h2 class="current-city">Paris</h2>
+          <h2 class="current-city"></h2>
           </div>
         <div class="current-weather-details">
         <div class="current-temperature">
           <div class="emoji">☀️</div>
-          <div class="temp">12</div>
+          <div class="temp"></div>
           <div class="unit">°C</div>
         </div>
         <div>
@@ -53,5 +54,6 @@ air
         </p>
        </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>

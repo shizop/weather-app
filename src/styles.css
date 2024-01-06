@@ -1,5 +1,5 @@
 body {
-  background-color: #e3f6f5;
+  background-color: #ebe8e7;
   font-family: "Poppins", sans-serif;
 }
 
@@ -15,7 +15,7 @@ body {
 h1 {
   font-size: 80px;
   text-align: center;
-  color: #272343;
+  color: #7a77b9;
   padding: 0;
   line-height: 48px;
 }
@@ -29,7 +29,7 @@ h1 {
 .search-form:hover {
   border-radius: 30px;
   padding: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(234, 113, 134, 0.3);
   transition: all 200ms ease;
 }
 
@@ -54,7 +54,7 @@ h1 {
   font-size: 50px;
   font-weight: bold;
   line-height: 2px;
-  color: #272343;
+  color: #ea7186;
 }
 
 .current-weather-details {
@@ -88,17 +88,19 @@ h1 {
 }
 
 .material-symbols-outlined {
-  color: #272343;
+  color: #bd9dea;
   position: relative;
   top: 5px;
 }
 
 .line {
-  border-bottom: 1px solid #bae8e8;
+  border-bottom: 1px solid #7a77b9;
   padding: 0 0 30px 0;
 }
+
 a {
-  color: #bae8e8;
+  color: #bd9dea;
+  text-decoration: none;
 }
 
 footer p {
