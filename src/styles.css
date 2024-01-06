@@ -70,15 +70,15 @@ h1 {
   font-weight: bold;
 }
 
-.emoji {
-  font-size: 74px;
+.icon {
+  width: 100px;
+  height: 100px;
   position: relative;
-  top: 5px;
+  top: 10px;
 }
 
 .current-temperature .temp {
   font-size: 80px;
-  margin-left: 10px;
 }
 
 .current-temperature .unit {
