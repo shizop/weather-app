@@ -96,7 +96,8 @@ h1 {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  max-width: 80px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .weather-forecast-date {
