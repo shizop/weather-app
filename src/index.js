@@ -20,6 +20,8 @@ function updateWeather(response) {
   humidityElement.innerHTML = response.data.temperature.humidity + "%";
   windElement.innerHTML = response.data.wind.speed + "km/h";
 
+  getForecast(response.data.daily);
+
   console.log(response.data);
 }
 
@@ -74,20 +76,16 @@ function searchCity(city) {
   axios.get(apiUrl).then(updateWeather);
 }
 
-function submitSearch(event) {
-  event.preventDefault();
-  let cityInput = document.querySelector("#search");
+function getForecast(city) {
+  let apiKey = "19eeof4b31b320e40tebc23be8f0a010";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
 
-  searchCity(cityInput.value);
+  axios.get(apiUrl).then(displayForecast);
 }
 
-let submitCity = document.querySelector("#search-form");
+function displayForecast(response) {
+  console.log(response.data);
 
-submitCity.addEventListener("submit", submitSearch);
-
-searchCity("Kuala Lumpur");
-
-function displayForecast() {
   let forecastDays = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
@@ -108,4 +106,15 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHtml;
 }
 
-displayForecast();
+function submitSearch(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#search");
+
+  searchCity(cityInput.value);
+}
+
+let submitCity = document.querySelector("#search-form");
+
+submitCity.addEventListener("submit", submitSearch);
+
+searchCity("Kuala Lumpur");
